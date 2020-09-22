@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Informationen in Bild und Ton rund um den Safaripark Münchhausen">
+    <link rel="stylesheet" href="styles.css">
+    <title>Safaripark Gänserndorf</title>
+</head>
+
+<header class="site-header">
+    <p class="site-slogan">Safaripark<br><br>Gänserndorf</p>
+</header>
+
+
+
+<nav class="site-nav">
+    <ul class="site-nav-list">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="info.html">Information</a>
+        </li>
+        <li>
+            <a href="contact.html">Kontakt</a>
+        </li>
+    </ul>
+</nav>
+
+
+<form method="POST" action="">
+
+    <fieldset>
+
+        <div>
+            <label for="name" class="form-design">Name</label>
+            <input type="text" name="name" id="name" placeholder="Ihr Name" maxlength="20" autofocus required>
+        </div>
+
+        <div>
+            <label for="emailadresse">E-Mail</label>
+            <input type="email" name="emailadresse" id="emailadresse" placeholder="Ihre EMail Adresse" autocomplete="on" required>
+        </div>
+
+        <div>
+            <label for="besuchstag">Besuchstag</label>
+            <input type="date" name="besuchstag" id="besuchstag">
+        </div>
+
+        <div>
+            <label for="besuchszeit">Besuchszeit</label>
+            <input type="time" name="besuchszeit" id="besuchszeit">
+        </div>
+
+        <fieldset class="feedback">
+
+            <legend>Feedback</legend>
+
+            <div>
+                <h3>Hat es Ihnen bei uns gefallen?</h3>
+                <input type="range" name="gefallen" id="gefallen" min="0" max="100" step="1">
+            </div>
+
+            <div class="feedbackfeld">
+
+                <div>
+                    <label for="empfehlung">Ja</label>
+                </div>
+                <!--
+                <div>
+                    <input type="radio" id="empfehlung" name="empfehlung" value="Ja"><br>
+                </div>
+                -->
+                <div>
+                    <label for="empfehlung">Nein</label><br>
+                </div>
+                <!--
+                <div>
+                    <input type="radio" id="empfehlung" name="empfehlung" value="Nein">
+                </div>
+                -->
+            </div>
+
+        </fieldset>
+
+        <div>
+            <textarea name="kommentar" id="kommentar" placeholder="Bitte geben Sie hier Ihre Nachricht ein" spellcheck="true" required></textarea>
+        </div>
+
+        <div>
+            <select name="besucherinfo" id="besucherinfo">
+            <option value="1">Familienausflug</option>
+            <option value="2">Allein unterwegs</option>
+            <option value="3">Gruppenausflug</option>
+            <option value="4">Ausflug mit Freunden</option>
+            <option value="5">Etwas anderes</option>
+        </select>
+        </div>
+
+        <div>
+            <button type="submit">Absenden</button>
+            <button type="reset">Zurücksetzen</button>
+        </div>
+
+    </fieldset>
+
+</form>
+
+<body>
+
+</body>
+
+</html>
